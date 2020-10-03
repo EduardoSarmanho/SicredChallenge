@@ -10,6 +10,11 @@
 		5BE0B331BB1BFCD0C6C4B57B /* libPods-SicrediChallenge-SicrediChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA13B29BCE28E278626EE26 /* libPods-SicrediChallenge-SicrediChallengeUITests.a */; };
 		5C99D38324A915AB089DC1F8 /* libPods-SicrediChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357E8EBE94FC1BED100770A8 /* libPods-SicrediChallengeTests.a */; };
 		7F06B2E62528B268003613BD /* EventModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06B2E52528B268003613BD /* EventModuleTest.swift */; };
+		7F43AA942528BBCA00376F67 /* GetEventDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */; };
+		7F43AA992528BBD500376F67 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA982528BBD500376F67 /* EventDetail.swift */; };
+		7F43AA9E2528BBFD00376F67 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA9D2528BBFD00376F67 /* People.swift */; };
+		7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */; };
+		7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -62,6 +67,11 @@
 		6BB7CB00D918A4F482D5AAB9 /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		76E95C09C0F8EAF6F6EBE320 /* libPods-SicrediChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicrediChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F06B2E52528B268003613BD /* EventModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModuleTest.swift; sourceTree = "<group>"; };
+		7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventDetailResponse.swift; sourceTree = "<group>"; };
+		7F43AA982528BBD500376F67 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		7F43AA9D2528BBFD00376F67 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinParameters.swift; sourceTree = "<group>"; };
+		7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinResponse.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -271,6 +281,8 @@
 			children = (
 				7F59F2912528A533004A77CD /* RestServiceFactory.swift */,
 				7F59F2A92528AAC1004A77CD /* Event.swift */,
+				7F43AA982528BBD500376F67 /* EventDetail.swift */,
+				7F43AA9D2528BBFD00376F67 /* People.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,6 +301,9 @@
 			isa = PBXGroup;
 			children = (
 				7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */,
+				7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */,
+				7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */,
+				7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -558,7 +573,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */,
 				7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */,
+				7F43AA942528BBCA00376F67 /* GetEventDetailResponse.swift in Sources */,
 				7F59F2BF2528AE16004A77CD /* RestServiceExtension.swift in Sources */,
 				7F59F2B52528AC6E004A77CD /* GetEventsResponse.swift in Sources */,
 				7F59F2AA2528AAC1004A77CD /* Event.swift in Sources */,
@@ -570,11 +587,14 @@
 				7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */,
 				7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */,
 				7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */,
+				7F43AA9E2528BBFD00376F67 /* People.swift in Sources */,
+				7F43AA992528BBD500376F67 /* EventDetail.swift in Sources */,
 				7F59F2A32528AA52004A77CD /* EventsFeatures.swift in Sources */,
 				7F59F2CE2528B198004A77CD /* DataInit.swift in Sources */,
 				7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */,
 				7F59F2802528A0AB004A77CD /* EventsCoordinator.swift in Sources */,
 				7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */,
+				7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */,
 				7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

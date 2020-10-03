@@ -27,7 +27,7 @@ class EventModuleTest: QuickSpec {
                 }
             }
             
-            // MARK: - Event Tests
+            // MARK: - Get Events List Tests
             context("get evets request") {
                 
                 var requestExecuted = false
@@ -172,6 +172,140 @@ class EventModuleTest: QuickSpec {
                             }
                         })
                         
+                        expect(requestExecuted).toEventually(beTrue(), timeout: timeout)
+                    }
+                }
+            }
+            
+            // MARK: - Get Event Details Tests
+            context("get evet detail request") {
+                
+                var requestExecuted = false
+                
+                beforeEach {
+                    requestExecuted = false
+                    HTTPStubs.removeAllStubs()
+                }
+                
+                context("request successfull") {
+                    
+                    beforeEach {
+                        stub(condition: isHost(devRestService.host) && isPath("/api/events/1")) { _ in
+                            
+                            let response: [String: Any] = [
+                                "people": [
+                                    [
+                                        "picture": "https://images.pexels.com/photos/1292306/pexels-photo-1292306.jpeg",
+                                        "name": "Alexandre Pires",
+                                        "eventId": "1",
+                                        "id": "1"
+                                    ],
+                                    [
+                                        "picture": "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg",
+                                        "name": "Jéssica Souza",
+                                        "eventId": "1",
+                                        "id": "2"
+                                    ],
+                                    [
+                                        "picture": "https://images.pexels.com/photos/542282/pexels-photo-542282.jpeg",
+                                        "name": "Boanerges Oliveira",
+                                        "eventId": "1",
+                                        "id": "6"
+                                    ],
+                                    [
+                                        "picture": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+                                        "name": "Felipe Smith",
+                                        "eventId": "1",
+                                        "id": "7"
+                                    ],
+                                    [
+                                        "picture": "https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg",
+                                        "name": "Paulo Santos",
+                                        "eventId": "1",
+                                        "id": "11"
+                                    ]
+                                ],
+                                "date": 1534784400,
+                                "description": "O Patas Dadas estará na Redenção, nesse domingo, com cães para adoção e produtos à venda!\n\nNa ocasião, teremos bottons, bloquinhos e camisetas!\n\nTraga seu Pet, os amigos e o chima, e venha aproveitar esse dia de sol com a gente e com alguns de nossos peludinhos - que estarão prontinhos para ganhar o ♥ de um humano bem legal pra chamar de seu. \n\nAceitaremos todos os tipos de doação:\n- guias e coleiras em bom estado\n- ração (as que mais precisamos no momento são sênior e filhote)\n- roupinhas \n- cobertas \n- remédios dentro do prazo de validade",
+                                "image": "http://lproweb.procempa.com.br/pmpa/prefpoa/seda_news/usu_img/Papel%20de%20Parede.png",
+                                "longitude": -51.2146267,
+                                "latitude": -30.0392981,
+                                "price": 29.99,
+                                "title": "Feira de adoção de animais na Redenção",
+                                "id": "1"
+                            ]
+                            
+                            return HTTPStubsResponse(jsonObject: response, statusCode: 200, headers: nil)
+                        }
+                    }
+                    
+                    it("should return a valid response") {
+                        
+                        eventsModule?.getEventDetail(event: 1, callback: { response in
+                            requestExecuted = true
+                            switch response {
+                            case .failure:
+                                XCTFail("Should not fail")
+                            case .success(let event, _):
+                                expect(event.date).to(equal(1534784400))
+                                expect(event.description).to(equal("O Patas Dadas estará na Redenção, nesse domingo, com cães para adoção e produtos à venda!\n\nNa ocasião, teremos bottons, bloquinhos e camisetas!\n\nTraga seu Pet, os amigos e o chima, e venha aproveitar esse dia de sol com a gente e com alguns de nossos peludinhos - que estarão prontinhos para ganhar o ♥ de um humano bem legal pra chamar de seu. \n\nAceitaremos todos os tipos de doação:\n- guias e coleiras em bom estado\n- ração (as que mais precisamos no momento são sênior e filhote)\n- roupinhas \n- cobertas \n- remédios dentro do prazo de validade"))
+                                expect(event.image).to(equal("http://lproweb.procempa.com.br/pmpa/prefpoa/seda_news/usu_img/Papel%20de%20Parede.png"))
+                                expect(event.longitude).to(equal(-51.2146267))
+                                expect(event.latitude).to(equal(-30.0392981))
+                                expect(event.price).to(equal(29.99))
+                                expect(event.title).to(equal("Feira de adoção de animais na Redenção"))
+                                expect(event.id).to(equal("1"))
+                                
+                                expect(event.people?[0].picture).to(equal("https://images.pexels.com/photos/1292306/pexels-photo-1292306.jpeg"))
+                                expect(event.people?[0].name).to(equal("Alexandre Pires"))
+                                expect(event.people?[0].eventId).to(equal("1"))
+                                expect(event.people?[0].id).to(equal("1"))
+                                
+                                expect(event.people?[1].picture).to(equal("https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg"))
+                                expect(event.people?[1].name).to(equal("Jéssica Souza"))
+                                expect(event.people?[1].eventId).to(equal("1"))
+                                expect(event.people?[1].id).to(equal("2"))
+                                
+                            }
+                        })
+                        
+                        expect(requestExecuted).toEventually(beTrue(), timeout: timeout)
+                    }
+                }
+            }
+            
+            // MARK: - Post Checkin Tests
+            context("post checkin request") {
+                
+                var requestExecuted = false
+                
+                beforeEach {
+                    requestExecuted = false
+                    HTTPStubs.removeAllStubs()
+                }
+                
+                context("request successfull") {
+                    
+                    beforeEach {
+                        stub(condition: isHost(devRestService.host) && isPath("/api/checkin")) { _ in
+                            
+                            let response: [String: Any] = ["code": "200"]
+                            
+                            return HTTPStubsResponse(jsonObject: response, statusCode: 200, headers: nil)
+                        }
+                    }
+                    
+                    it("should return a valid response") {
+                        
+                        eventsModule?.postCheckin(parameters: GetCheckinParameters(eventId: "1", name: "Eduardo", email: "eduardo@teste.com"), callback: { response in
+                            requestExecuted = true
+                            switch response {
+                            case .failure:
+                                XCTFail("Should not fail")
+                            case .success:
+                                break
+                            }
+                        })
                         expect(requestExecuted).toEventually(beTrue(), timeout: timeout)
                     }
                 }
