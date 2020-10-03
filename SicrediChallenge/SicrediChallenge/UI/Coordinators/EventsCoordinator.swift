@@ -33,3 +33,15 @@ extension EventsCoordinator: HomeViewNavigation {
     func goToDetails(_ sender: HomeViewController, event id: Int) {
     }
 }
+
+// MARK: - DetailViewNavigation
+extension EventsCoordinator: DetailViewNavigation {
+    func navigateToDetail(animated: Bool, event id: Int) {
+        guard let scene = DetailViewController.instantiate() else { return }
+        scene.coordinator = self
+        let eventModule = EventsModule(service: restService)
+        scene.viewModel = DetailViewModel(eventModule: eventModule, event: id)
+        
+        navigation.pushViewController(scene, animated: animated)
+    }
+}
