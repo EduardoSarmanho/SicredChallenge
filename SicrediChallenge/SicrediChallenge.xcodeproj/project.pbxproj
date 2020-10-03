@@ -3,12 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5BE0B331BB1BFCD0C6C4B57B /* libPods-SicrediChallenge-SicrediChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA13B29BCE28E278626EE26 /* libPods-SicrediChallenge-SicrediChallengeUITests.a */; };
 		5C99D38324A915AB089DC1F8 /* libPods-SicrediChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357E8EBE94FC1BED100770A8 /* libPods-SicrediChallengeTests.a */; };
+		7F06B2E62528B268003613BD /* EventModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06B2E52528B268003613BD /* EventModuleTest.swift */; };
+		7F28C5132528D40C00DD3DED /* GeoCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5122528D40C00DD3DED /* GeoCoder.swift */; };
+		7F28C5182528D47E00DD3DED /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5172528D47E00DD3DED /* Local.swift */; };
+		7F28C51D2528D81E00DD3DED /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C51C2528D81E00DD3DED /* IntExtension.swift */; };
+		7F28C52F2528EB3500DD3DED /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F28C52E2528EB3500DD3DED /* DetailViewController.storyboard */; };
+		7F28C5342528EB4A00DD3DED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5332528EB4A00DD3DED /* DetailViewController.swift */; };
+		7F28C5392528EB5500DD3DED /* DetailViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5382528EB5500DD3DED /* DetailViewFeatures.swift */; };
+		7F28C53E2528EB5C00DD3DED /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C53D2528EB5C00DD3DED /* DetailViewModel.swift */; };
+		7F28C5432528EB6400DD3DED /* DetailViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5422528EB6400DD3DED /* DetailViewNavigation.swift */; };
+		7F28C5482528EB6900DD3DED /* DetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28C5472528EB6900DD3DED /* DetailViewState.swift */; };
+		7F43AA942528BBCA00376F67 /* GetEventDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */; };
+		7F43AA992528BBD500376F67 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA982528BBD500376F67 /* EventDetail.swift */; };
+		7F43AA9E2528BBFD00376F67 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AA9D2528BBFD00376F67 /* People.swift */; };
+		7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */; };
+		7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */; };
+		7F43AAB82528CB5400376F67 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */; };
+		7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */; };
+		7F4CE9F825291A92001C4802 /* SBCardPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9F725291A92001C4802 /* SBCardPopup.swift */; };
+		7F4CE9FD25291AC1001C4802 /* CheckinPopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */; };
+		7F4CEA0225291AD6001C4802 /* CheckinPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */; };
+		7F4CEA1B25292870001C4802 /* CheckinPopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -16,6 +37,15 @@
 		7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F27A2528A041004A77CD /* AppCoordinator.swift */; };
 		7F59F2802528A0AB004A77CD /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F27F2528A0AB004A77CD /* EventsCoordinator.swift */; };
 		7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2912528A533004A77CD /* RestServiceFactory.swift */; };
+		7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F29A2528AA4B004A77CD /* EventsModule.swift */; };
+		7F59F2A32528AA52004A77CD /* EventsFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2A22528AA52004A77CD /* EventsFeatures.swift */; };
+		7F59F2AA2528AAC1004A77CD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2A92528AAC1004A77CD /* Event.swift */; };
+		7F59F2B52528AC6E004A77CD /* GetEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */; };
+		7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2B92528ACAD004A77CD /* ServiceError.swift */; };
+		7F59F2BF2528AE16004A77CD /* RestServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */; };
+		7F59F2C42528AE40004A77CD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2C32528AE40004A77CD /* StringExtension.swift */; };
+		7F59F2C92528AE6C004A77CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F59F2C82528AE6C004A77CD /* Localizable.strings */; };
+		7F59F2CE2528B198004A77CD /* DataInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2CD2528B198004A77CD /* DataInit.swift */; };
 		7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D325289AFC00E5E67A /* AppDelegate.swift */; };
 		7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D525289AFC00E5E67A /* SceneDelegate.swift */; };
 		7F6B66D825289AFC00E5E67A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D725289AFC00E5E67A /* HomeViewController.swift */; };
@@ -51,6 +81,27 @@
 		357E8EBE94FC1BED100770A8 /* libPods-SicrediChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicrediChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB7CB00D918A4F482D5AAB9 /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		76E95C09C0F8EAF6F6EBE320 /* libPods-SicrediChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicrediChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F06B2E52528B268003613BD /* EventModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModuleTest.swift; sourceTree = "<group>"; };
+		7F28C5122528D40C00DD3DED /* GeoCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCoder.swift; sourceTree = "<group>"; };
+		7F28C5172528D47E00DD3DED /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+		7F28C51C2528D81E00DD3DED /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		7F28C52E2528EB3500DD3DED /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		7F28C5332528EB4A00DD3DED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7F28C5382528EB5500DD3DED /* DetailViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewFeatures.swift; sourceTree = "<group>"; };
+		7F28C53D2528EB5C00DD3DED /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7F28C5422528EB6400DD3DED /* DetailViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewNavigation.swift; sourceTree = "<group>"; };
+		7F28C5472528EB6900DD3DED /* DetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewState.swift; sourceTree = "<group>"; };
+		7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventDetailResponse.swift; sourceTree = "<group>"; };
+		7F43AA982528BBD500376F67 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		7F43AA9D2528BBFD00376F67 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinParameters.swift; sourceTree = "<group>"; };
+		7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinResponse.swift; sourceTree = "<group>"; };
+		7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F4CE9F725291A92001C4802 /* SBCardPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBCardPopup.swift; sourceTree = "<group>"; };
+		7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckinPopupViewController.storyboard; sourceTree = "<group>"; };
+		7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinPopupViewController.swift; sourceTree = "<group>"; };
+		7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinPopupDelegate.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -58,6 +109,15 @@
 		7F59F27A2528A041004A77CD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7F59F27F2528A0AB004A77CD /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
 		7F59F2912528A533004A77CD /* RestServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceFactory.swift; sourceTree = "<group>"; };
+		7F59F29A2528AA4B004A77CD /* EventsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModule.swift; sourceTree = "<group>"; };
+		7F59F2A22528AA52004A77CD /* EventsFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsFeatures.swift; sourceTree = "<group>"; };
+		7F59F2A92528AAC1004A77CD /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventsResponse.swift; sourceTree = "<group>"; };
+		7F59F2B92528ACAD004A77CD /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceExtension.swift; sourceTree = "<group>"; };
+		7F59F2C32528AE40004A77CD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7F59F2C82528AE6C004A77CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7F59F2CD2528B198004A77CD /* DataInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInit.swift; sourceTree = "<group>"; };
 		7F6B66D025289AFC00E5E67A /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6B66D325289AFC00E5E67A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F6B66D525289AFC00E5E67A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,10 +188,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7F06B2E42528B250003613BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F06B2E52528B268003613BD /* EventModuleTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7F28C52D2528EB1800DD3DED /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7F28C52E2528EB3500DD3DED /* DetailViewController.storyboard */,
+				7F28C5332528EB4A00DD3DED /* DetailViewController.swift */,
+				7F28C5382528EB5500DD3DED /* DetailViewFeatures.swift */,
+				7F28C53D2528EB5C00DD3DED /* DetailViewModel.swift */,
+				7F28C5422528EB6400DD3DED /* DetailViewNavigation.swift */,
+				7F28C5472528EB6900DD3DED /* DetailViewState.swift */,
+				7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7F4CE9F5252918F6001C4802 /* Checkin Popup */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */,
+				7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */,
+				7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */,
+			);
+			path = "Checkin Popup";
+			sourceTree = "<group>";
+		};
 		7F59F25025289D21004A77CD /* Businness Logic */ = {
 			isa = PBXGroup;
 			children = (
 				7F59F2902528A518004A77CD /* Models */,
+				7F59F2CD2528B198004A77CD /* DataInit.swift */,
+				7F28C5122528D40C00DD3DED /* GeoCoder.swift */,
+				7F4CE9F725291A92001C4802 /* SBCardPopup.swift */,
 			);
 			path = "Businness Logic";
 			sourceTree = "<group>";
@@ -160,6 +255,7 @@
 		7F59F25325289D40004A77CD /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2C82528AE6C004A77CD /* Localizable.strings */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -168,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				7F59F25525289D8D004A77CD /* API */,
+				7F59F2A82528AA90004A77CD /* Models */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +272,7 @@
 		7F59F25525289D8D004A77CD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2992528A9BD004A77CD /* Events */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -208,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				7F59F25F25289EC0004A77CD /* Home */,
+				7F28C52D2528EB1800DD3DED /* Detail */,
+				7F4CE9F5252918F6001C4802 /* Checkin Popup */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -215,6 +315,9 @@
 		7F59F25A25289DFA004A77CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */,
+				7F59F2C32528AE40004A77CD /* StringExtension.swift */,
+				7F28C51C2528D81E00DD3DED /* IntExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,6 +331,7 @@
 				7F59F26B25289FFA004A77CD /* HomeViewModel.swift */,
 				7F59F2702528A006004A77CD /* HomeViewNavigation.swift */,
 				7F59F2752528A00C004A77CD /* HomeViewState.swift */,
+				7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -236,6 +340,39 @@
 			isa = PBXGroup;
 			children = (
 				7F59F2912528A533004A77CD /* RestServiceFactory.swift */,
+				7F59F2A92528AAC1004A77CD /* Event.swift */,
+				7F43AA982528BBD500376F67 /* EventDetail.swift */,
+				7F43AA9D2528BBFD00376F67 /* People.swift */,
+				7F28C5172528D47E00DD3DED /* Local.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F59F2992528A9BD004A77CD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2A72528AA57004A77CD /* Models */,
+				7F59F29A2528AA4B004A77CD /* EventsModule.swift */,
+				7F59F2A22528AA52004A77CD /* EventsFeatures.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		7F59F2A72528AA57004A77CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */,
+				7F43AA932528BBCA00376F67 /* GetEventDetailResponse.swift */,
+				7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */,
+				7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F59F2A82528AA90004A77CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2B92528ACAD004A77CD /* ServiceError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,6 +415,7 @@
 		7F6B66E925289AFF00E5E67A /* SicrediChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F06B2E42528B250003613BD /* Service */,
 				7F6B66EA25289AFF00E5E67A /* SicrediChallengeTests.swift */,
 				7F6B66EC25289AFF00E5E67A /* Info.plist */,
 			);
@@ -304,6 +442,7 @@
 				7F6B66CC25289AFC00E5E67A /* Sources */,
 				7F6B66CD25289AFC00E5E67A /* Frameworks */,
 				7F6B66CE25289AFC00E5E67A /* Resources */,
+				F4863EBD4DBF21406CE8AD59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +480,7 @@
 				7F6B66ED25289AFF00E5E67A /* Sources */,
 				7F6B66EE25289AFF00E5E67A /* Frameworks */,
 				7F6B66EF25289AFF00E5E67A /* Resources */,
+				F18FE45FAF17DA742DECD8E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +540,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6B66E025289AFF00E5E67A /* LaunchScreen.storyboard in Resources */,
+				7F59F2C92528AE6C004A77CD /* Localizable.strings in Resources */,
+				7F4CE9FD25291AC1001C4802 /* CheckinPopupViewController.storyboard in Resources */,
+				7F28C52F2528EB3500DD3DED /* DetailViewController.storyboard in Resources */,
 				7F6B66DD25289AFF00E5E67A /* Assets.xcassets in Resources */,
 				7F6B66DB25289AFC00E5E67A /* HomeViewController.storyboard in Resources */,
 			);
@@ -488,6 +631,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F18FE45FAF17DA742DECD8E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4863EBD4DBF21406CE8AD59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -495,16 +672,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F43AAB82528CB5400376F67 /* EventTableViewCell.swift in Sources */,
+				7F4CEA1B25292870001C4802 /* CheckinPopupDelegate.swift in Sources */,
+				7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */,
+				7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */,
+				7F28C5132528D40C00DD3DED /* GeoCoder.swift in Sources */,
+				7F43AA942528BBCA00376F67 /* GetEventDetailResponse.swift in Sources */,
+				7F28C51D2528D81E00DD3DED /* IntExtension.swift in Sources */,
+				7F59F2BF2528AE16004A77CD /* RestServiceExtension.swift in Sources */,
+				7F59F2B52528AC6E004A77CD /* GetEventsResponse.swift in Sources */,
+				7F59F2AA2528AAC1004A77CD /* Event.swift in Sources */,
 				7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */,
 				7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */,
 				7F6B66D825289AFC00E5E67A /* HomeViewController.swift in Sources */,
 				7F59F2762528A00C004A77CD /* HomeViewState.swift in Sources */,
+				7F28C53E2528EB5C00DD3DED /* DetailViewModel.swift in Sources */,
+				7F59F2C42528AE40004A77CD /* StringExtension.swift in Sources */,
+				7F28C5432528EB6400DD3DED /* DetailViewNavigation.swift in Sources */,
 				7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */,
+				7F4CE9F825291A92001C4802 /* SBCardPopup.swift in Sources */,
 				7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */,
+				7F28C5182528D47E00DD3DED /* Local.swift in Sources */,
+				7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */,
+				7F43AA9E2528BBFD00376F67 /* People.swift in Sources */,
+				7F43AA992528BBD500376F67 /* EventDetail.swift in Sources */,
+				7F59F2A32528AA52004A77CD /* EventsFeatures.swift in Sources */,
+				7F59F2CE2528B198004A77CD /* DataInit.swift in Sources */,
 				7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */,
 				7F59F2802528A0AB004A77CD /* EventsCoordinator.swift in Sources */,
 				7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */,
+				7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */,
 				7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */,
+				7F4CEA0225291AD6001C4802 /* CheckinPopupViewController.swift in Sources */,
+				7F28C5342528EB4A00DD3DED /* DetailViewController.swift in Sources */,
+				7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */,
+				7F28C5392528EB5500DD3DED /* DetailViewFeatures.swift in Sources */,
+				7F28C5482528EB6900DD3DED /* DetailViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F06B2E62528B268003613BD /* EventModuleTest.swift in Sources */,
 				7F6B66EB25289AFF00E5E67A /* SicrediChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
