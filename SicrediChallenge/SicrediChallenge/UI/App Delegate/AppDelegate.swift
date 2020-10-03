@@ -1,5 +1,6 @@
 import UIFlow
 import RestService
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigation.isNavigationBarHidden = true
         coordinator = AppCoordinator(navigation: navigation, restService: restService)
         coordinator?.start(animated: false)
+        
+        IQKeyboardManager.shared.enable = true
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigation

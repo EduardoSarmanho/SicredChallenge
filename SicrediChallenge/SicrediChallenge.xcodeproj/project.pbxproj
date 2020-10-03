@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,9 @@
 		7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */; };
 		7F43AAB82528CB5400376F67 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */; };
 		7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */; };
+		7F4CE9F825291A92001C4802 /* SBCardPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9F725291A92001C4802 /* SBCardPopup.swift */; };
+		7F4CE9FD25291AC1001C4802 /* CheckinPopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */; };
+		7F4CEA0225291AD6001C4802 /* CheckinPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -94,6 +97,9 @@
 		7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinResponse.swift; sourceTree = "<group>"; };
 		7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F4CE9F725291A92001C4802 /* SBCardPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBCardPopup.swift; sourceTree = "<group>"; };
+		7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckinPopupViewController.storyboard; sourceTree = "<group>"; };
+		7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinPopupViewController.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -202,12 +208,22 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		7F4CE9F5252918F6001C4802 /* Checkin Popup */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */,
+				7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */,
+			);
+			path = "Checkin Popup";
+			sourceTree = "<group>";
+		};
 		7F59F25025289D21004A77CD /* Businness Logic */ = {
 			isa = PBXGroup;
 			children = (
 				7F59F2902528A518004A77CD /* Models */,
 				7F59F2CD2528B198004A77CD /* DataInit.swift */,
 				7F28C5122528D40C00DD3DED /* GeoCoder.swift */,
+				7F4CE9F725291A92001C4802 /* SBCardPopup.swift */,
 			);
 			path = "Businness Logic";
 			sourceTree = "<group>";
@@ -288,6 +304,7 @@
 			children = (
 				7F59F25F25289EC0004A77CD /* Home */,
 				7F28C52D2528EB1800DD3DED /* Detail */,
+				7F4CE9F5252918F6001C4802 /* Checkin Popup */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -422,6 +439,7 @@
 				7F6B66CC25289AFC00E5E67A /* Sources */,
 				7F6B66CD25289AFC00E5E67A /* Frameworks */,
 				7F6B66CE25289AFC00E5E67A /* Resources */,
+				F4863EBD4DBF21406CE8AD59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,6 +477,7 @@
 				7F6B66ED25289AFF00E5E67A /* Sources */,
 				7F6B66EE25289AFF00E5E67A /* Frameworks */,
 				7F6B66EF25289AFF00E5E67A /* Resources */,
+				F18FE45FAF17DA742DECD8E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -519,6 +538,7 @@
 			files = (
 				7F6B66E025289AFF00E5E67A /* LaunchScreen.storyboard in Resources */,
 				7F59F2C92528AE6C004A77CD /* Localizable.strings in Resources */,
+				7F4CE9FD25291AC1001C4802 /* CheckinPopupViewController.storyboard in Resources */,
 				7F28C52F2528EB3500DD3DED /* DetailViewController.storyboard in Resources */,
 				7F6B66DD25289AFF00E5E67A /* Assets.xcassets in Resources */,
 				7F6B66DB25289AFC00E5E67A /* HomeViewController.storyboard in Resources */,
@@ -608,6 +628,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F18FE45FAF17DA742DECD8E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4863EBD4DBF21406CE8AD59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -632,6 +686,7 @@
 				7F59F2C42528AE40004A77CD /* StringExtension.swift in Sources */,
 				7F28C5432528EB6400DD3DED /* DetailViewNavigation.swift in Sources */,
 				7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */,
+				7F4CE9F825291A92001C4802 /* SBCardPopup.swift in Sources */,
 				7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */,
 				7F28C5182528D47E00DD3DED /* Local.swift in Sources */,
 				7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */,
@@ -644,6 +699,7 @@
 				7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */,
 				7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */,
 				7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */,
+				7F4CEA0225291AD6001C4802 /* CheckinPopupViewController.swift in Sources */,
 				7F28C5342528EB4A00DD3DED /* DetailViewController.swift in Sources */,
 				7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */,
 				7F28C5392528EB5500DD3DED /* DetailViewFeatures.swift in Sources */,

@@ -7,6 +7,7 @@ target 'SicrediChallenge' do
   pod 'RestService', '~> 1.0'
   pod 'OHHTTPStubs/Swift', '9.0.0', :configuration => 'Debug'
   pod 'Kingfisher', '5.7.1'
+  pod 'IQKeyboardManagerSwift', '6.5.4'
 
 
   target 'SicrediChallengeTests' do

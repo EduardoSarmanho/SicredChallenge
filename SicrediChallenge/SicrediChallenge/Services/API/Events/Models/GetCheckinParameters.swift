@@ -8,6 +8,5 @@ public struct GetCheckinParameters {
         self.checkinParameters = ["eventId": eventId]
         self.checkinParameters.updateValue(name, forKey: "name")
         self.checkinParameters.updateValue(email, forKey: "email")
-
     }
 }

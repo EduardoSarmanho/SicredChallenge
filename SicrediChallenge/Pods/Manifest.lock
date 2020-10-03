@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.4)
   - Kingfisher (5.7.1)
   - Nimble (8.0.5)
   - OHHTTPStubs/Core (9.0.0)
@@ -19,6 +20,7 @@ PODS:
   - UIFlow (1.0.2)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 6.5.4)
   - Kingfisher (= 5.7.1)
   - Nimble (= 8.0.5)
   - OHHTTPStubs/Swift (= 9.0.0)
@@ -28,6 +30,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - IQKeyboardManagerSwift
     - Kingfisher
     - Nimble
     - OHHTTPStubs
@@ -36,6 +39,7 @@ SPEC REPOS:
     - UIFlow
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   RestService: 313a26e7bb24c9a5c134f08dace5bd73c9227f60
   UIFlow: da565d3b56aac0fa25dca119820e7b12a3c33dcb
 
-PODFILE CHECKSUM: 457ce05b4f29dfdfaaea305cb2515f05867b7b00
+PODFILE CHECKSUM: e89d4164ee15446248322b00acebd952926fc3b1
 
 COCOAPODS: 1.9.3

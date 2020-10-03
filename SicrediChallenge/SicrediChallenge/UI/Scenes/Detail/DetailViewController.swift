@@ -94,12 +94,22 @@ extension DetailViewController {
             self.addressLabel.text = "\(local?.street ?? ""), \(local?.number ?? ""), \(local?.city ?? ""), \(local?.state ?? "")"
         }
     }
+    
+    func openCheckinPopUp() {
+        
+        let popupContent = CheckinPopupViewController.create()
+        let cardPopup = SBCardPopupViewController(contentViewController: popupContent)
+        cardPopup.show(onViewController: self)
+    }
 }
 
 // MARK: - IBActions
 extension DetailViewController {
     @IBAction func backPressed(_ sender: UIButton) {
         coordinator?.backToHome(animated: true)
+    }
+    @IBAction func checkinPressed(_ sender: UIButton) {
+        openCheckinPopUp()
     }
 }
 
