@@ -2,7 +2,6 @@ import CoreLocation
 
 public struct Local {
     
-    let country: String?
     let state: String?
     let city: String?
     let street: String?
@@ -10,7 +9,6 @@ public struct Local {
 
     init(clPlacemark: CLPlacemark) {
         
-        self.country = clPlacemark.country
         self.state = clPlacemark.administrativeArea
         self.city = clPlacemark.locality
         self.street = clPlacemark.thoroughfare

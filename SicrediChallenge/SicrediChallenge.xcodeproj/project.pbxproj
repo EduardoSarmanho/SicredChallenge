@@ -25,6 +25,7 @@
 		7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */; };
 		7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */; };
 		7F43AAB82528CB5400376F67 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */; };
+		7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -92,6 +93,7 @@
 		7F43AAA22528C14A00376F67 /* GetCheckinParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinParameters.swift; sourceTree = "<group>"; };
 		7F43AAA72528C15700376F67 /* GetCheckinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCheckinResponse.swift; sourceTree = "<group>"; };
 		7F43AAB72528CB5400376F67 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				7F28C53D2528EB5C00DD3DED /* DetailViewModel.swift */,
 				7F28C5422528EB6400DD3DED /* DetailViewNavigation.swift */,
 				7F28C5472528EB6900DD3DED /* DetailViewState.swift */,
+				7F4CE9ED25290DB6001C4802 /* OrganizatorCollectionViewCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				7F43AAA32528C14B00376F67 /* GetCheckinParameters.swift in Sources */,
 				7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */,
 				7F28C5342528EB4A00DD3DED /* DetailViewController.swift in Sources */,
+				7F4CE9EE25290DB6001C4802 /* OrganizatorCollectionViewCell.swift in Sources */,
 				7F28C5392528EB5500DD3DED /* DetailViewFeatures.swift in Sources */,
 				7F28C5482528EB6900DD3DED /* DetailViewState.swift in Sources */,
 			);

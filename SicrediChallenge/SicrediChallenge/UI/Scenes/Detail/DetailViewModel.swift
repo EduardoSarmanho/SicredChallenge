@@ -2,9 +2,6 @@ import UIFlow
 import Foundation
 
 class DetailViewModel: ModelObservable, DetailViewFeatures {
-    func getEventDetail() {
-        
-    }
     
     var observers: [ModelObserver] = []
     
@@ -24,5 +21,19 @@ class DetailViewModel: ModelObservable, DetailViewFeatures {
 
 // MARK: - Services
 extension DetailViewModel {
-    
+    func getEventDetail() {
+        eventModule.getEventDetail(event: eventId, callback: { response in
+            switch response {
+            
+            case .failure:
+                self.state = .requestFailed
+                self.notifyObservers()
+                
+            case .success(let event, _):
+                self.event = event
+                self.state = .requestSucceded
+                self.notifyObservers()
+            }
+        })
+    }
 }

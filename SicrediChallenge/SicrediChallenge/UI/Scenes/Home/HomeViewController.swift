@@ -67,7 +67,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vm = viewModel,
+              let eventIdString = vm.events?[indexPath.row].id,
+              let eventId = Int(eventIdString) else { return }
 
+        coordinator?.goToDetails(self, event: eventId)
     }
 }
 

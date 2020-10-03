@@ -31,11 +31,16 @@ extension EventsCoordinator: HomeViewNavigation {
     }
     
     func goToDetails(_ sender: HomeViewController, event id: Int) {
+        navigateToDetail(animated: true, event: id)
     }
 }
 
 // MARK: - DetailViewNavigation
 extension EventsCoordinator: DetailViewNavigation {
+    func backToHome(animated: Bool) {
+        back(animated: animated, toRoot: false)
+    }
+    
     func navigateToDetail(animated: Bool, event id: Int) {
         guard let scene = DetailViewController.instantiate() else { return }
         scene.coordinator = self
