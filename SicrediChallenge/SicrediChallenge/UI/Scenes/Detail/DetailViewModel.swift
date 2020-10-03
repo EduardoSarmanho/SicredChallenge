@@ -38,11 +38,11 @@ extension DetailViewModel {
             }
         })
     }
-
+    
     func getEventDetail() {
         self.state = .loading
         self.notifyObservers()
-
+        
         eventModule.getEventDetail(event: eventId, callback: { response in
             switch response {
             

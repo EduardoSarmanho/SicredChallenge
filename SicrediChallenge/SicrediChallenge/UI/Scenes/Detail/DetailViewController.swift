@@ -37,7 +37,6 @@ class DetailViewController: UIFlowViewController<DetailViewFeatures, DetailViewN
             setCheckinAsDone()
         case .checkinFailed:
             showErrorAlert(title: "error.checkin.uialert.title", message: "error.checkin.uialert.message")
-            
         }
     }
 }
@@ -133,7 +132,6 @@ extension DetailViewController: UICollectionViewDelegate , UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let vm  = viewModel else { return 0 }
         return vm.event?.people?.count ?? 0
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

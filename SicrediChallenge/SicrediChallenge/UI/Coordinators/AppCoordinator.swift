@@ -4,7 +4,6 @@ import RestService
 class AppCoordinator: Coordinator {
     
     // MARK: - Properties
-    
     let restService: RestService!
     
     // MARK: - Initializer

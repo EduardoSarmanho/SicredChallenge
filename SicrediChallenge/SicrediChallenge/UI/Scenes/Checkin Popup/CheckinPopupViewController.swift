@@ -10,7 +10,7 @@ class CheckinPopupViewController: UIViewController {
     var popupViewController: SBCardPopupViewController?
     
     weak var delegate: CheckinPopupDelegate?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

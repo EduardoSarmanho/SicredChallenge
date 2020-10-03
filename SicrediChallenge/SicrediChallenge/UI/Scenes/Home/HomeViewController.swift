@@ -1,7 +1,7 @@
 import UIFlow
 
 class HomeViewController: UIFlowViewController<HomeViewFeatures, HomeViewNavigation> {
-   
+    
     @IBOutlet weak var eventsTableView: UITableView!
     @IBOutlet weak var activeIndicator: UIActivityIndicatorView!
     
@@ -38,7 +38,7 @@ extension HomeViewController {
         activeIndicator.isHidden = true
         eventsTableView.isHidden = false
     }
-
+    
     func showErrorAlert() {
         let alert = UIAlertController(title: "error.home.uialert.title", message: "error.home.uialert.message", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
@@ -70,7 +70,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let vm = viewModel,
               let eventIdString = vm.events?[indexPath.row].id,
               let eventId = Int(eventIdString) else { return }
-
+        
         coordinator?.goToDetails(self, event: eventId)
     }
 }

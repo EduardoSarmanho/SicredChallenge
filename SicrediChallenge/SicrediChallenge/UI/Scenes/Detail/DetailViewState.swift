@@ -6,5 +6,4 @@ public enum DetailViewState {
     case requestSucceded
     case checkinSucceded
     case checkinFailed
-
 }

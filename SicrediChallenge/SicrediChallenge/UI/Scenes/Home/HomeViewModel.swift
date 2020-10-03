@@ -2,7 +2,7 @@ import UIFlow
 import Foundation
 
 class HomeViewModel: ModelObservable, HomeViewFeatures {
-   
+    
     var events: [Event]? = []
     
     var observers: [ModelObserver] = []
@@ -10,7 +10,7 @@ class HomeViewModel: ModelObservable, HomeViewFeatures {
     var state: HomeViewState = .started
     
     var invalid_data_message: String?
-   
+    
     let eventModule: EventsFeatures!
     
     init(eventModule: EventsFeatures) {
@@ -26,7 +26,7 @@ extension HomeViewModel {
         
         eventModule.getListOfEvents(callback: { response in
             switch response {
-                
+            
             case .failure:
                 self.state = .requestFailed
                 self.notifyObservers()

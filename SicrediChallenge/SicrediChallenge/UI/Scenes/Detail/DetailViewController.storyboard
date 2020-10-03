@@ -220,11 +220,6 @@
                             <constraint firstAttribute="bottom" secondItem="boF-g0-DOB" secondAttribute="bottom" id="uMA-y1-g9r"/>
                             <constraint firstItem="2jd-fg-S6G" firstAttribute="top" secondItem="fcT-XO-VsF" secondAttribute="bottom" constant="5" id="uNl-wy-e2x"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="cC0-TH-TcB"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="f6N-Hv-pTh" id="4w5-bl-SfI"/>

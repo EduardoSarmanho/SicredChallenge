@@ -28,7 +28,7 @@ class EventTableViewCell: UITableViewCell {
         }
     }
     
-   private func loadImage(stringUrl: String){
+    private func loadImage(stringUrl: String){
         let url = URL(string: stringUrl)
         eventImageView.kf.setImage(with: url, completionHandler:  { result in
             switch result {
