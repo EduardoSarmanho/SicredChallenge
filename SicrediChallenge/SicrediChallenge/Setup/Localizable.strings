@@ -6,3 +6,5 @@
 "error.home.uialert.message" = "Algo deu errado, iremos tentar recarregar.";
 "error.detail.uialert.title" = "Atenção";
 "error.detail.uialert.message" = "Algo deu errado, iremos voltar para a página inicial.";
+"error.checkin.uialert.title" = "Atenção";
+"error.checkin.uialert.message" = "Não foi possivel fazer seu checkin.";

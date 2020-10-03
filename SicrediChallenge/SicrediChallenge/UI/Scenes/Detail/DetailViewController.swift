@@ -2,6 +2,7 @@ import UIFlow
 
 class DetailViewController: UIFlowViewController<DetailViewFeatures, DetailViewNavigation> {
     
+    @IBOutlet weak var checkinButton: UIButton!
     @IBOutlet weak var organizatorCollectionView: UICollectionView!
     @IBOutlet weak var loaderView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -29,10 +30,14 @@ class DetailViewController: UIFlowViewController<DetailViewFeatures, DetailViewN
         case .loading:
             presentLoader()
         case .requestFailed:
-            showErrorAlert()
-            break
+            showErrorAlert(title: "error.detail.uialert.title", message: "error.detail.uialert.message")
         case .requestSucceded:
             setupInformation()
+        case .checkinSucceded:
+            setCheckinAsDone()
+        case .checkinFailed:
+            showErrorAlert(title: "error.checkin.uialert.title", message: "error.checkin.uialert.message")
+            
         }
     }
 }
@@ -80,8 +85,8 @@ extension DetailViewController {
         loaderView.isHidden = true
     }
     
-    func showErrorAlert() {
-        let alert = UIAlertController(title: "error.detail.uialert.title", message: "error.detail.uialert.message", preferredStyle: .alert)
+    func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title.localized, message: message.localized , preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
             self.coordinator?.backToHome(animated: true)
         }))
@@ -97,9 +102,19 @@ extension DetailViewController {
     
     func openCheckinPopUp() {
         
-        let popupContent = CheckinPopupViewController.create()
+        guard let popupContent: CheckinPopupViewController  = CheckinPopupViewController.create() as? CheckinPopupViewController else { return }
+        
         let cardPopup = SBCardPopupViewController(contentViewController: popupContent)
+        
+        popupContent.delegate = self
+        
         cardPopup.show(onViewController: self)
+    }
+    
+    func setCheckinAsDone() {
+        checkinButton.setTitle("", for: .normal)
+        checkinButton.setImage(UIImage(systemName: "checkmark.seal.fill"), for: .normal)
+        checkinButton.isEnabled = false
     }
 }
 
@@ -118,7 +133,7 @@ extension DetailViewController: UICollectionViewDelegate , UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let vm  = viewModel else { return 0 }
         return vm.event?.people?.count ?? 0
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -129,5 +144,14 @@ extension DetailViewController: UICollectionViewDelegate , UICollectionViewDataS
         cell.setupOrganizatorCell(people: people)
         
         return cell
+    }
+}
+
+// MARK: - CheckinPopupDelegate
+extension DetailViewController: CheckinPopupDelegate {
+    
+    func doCheckin(name: String, email: String) {
+        guard let vm  = viewModel else { return }
+        vm.sendCheckin(name: name, email: email)
     }
 }

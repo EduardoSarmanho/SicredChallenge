@@ -60,7 +60,7 @@ extension EventsModule {
 extension EventsModule {
     func postCheckin(parameters: GetCheckinParameters, callback: @escaping (GetCheckinResponse) -> Void) -> RestDataTask? {
 
-        return service.json(method: .get,
+        return service.json(method: .post,
                             path: "/api/checkin",
                             interceptor: nil) { response in
             

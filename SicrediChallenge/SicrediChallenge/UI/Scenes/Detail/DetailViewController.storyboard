@@ -146,13 +146,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnW-Vr-PKf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnW-Vr-PKf">
                                 <rect key="frame" x="20" y="455.5" width="70" height="30"/>
                                 <color key="backgroundColor" red="0.42630391725352113" green="0.62745098040000002" blue="0.17300286091549297" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="dNG-0f-16c"/>
                                     <constraint firstAttribute="height" constant="30" id="jLH-df-UPR"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Checkin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -219,10 +220,16 @@
                             <constraint firstAttribute="bottom" secondItem="boF-g0-DOB" secondAttribute="bottom" id="uMA-y1-g9r"/>
                             <constraint firstItem="2jd-fg-S6G" firstAttribute="top" secondItem="fcT-XO-VsF" secondAttribute="bottom" constant="5" id="uNl-wy-e2x"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cC0-TH-TcB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="f6N-Hv-pTh" id="4w5-bl-SfI"/>
                         <outlet property="addressLabel" destination="KLx-KA-wRi" id="GSM-Ag-Dq6"/>
+                        <outlet property="checkinButton" destination="hnW-Vr-PKf" id="Srd-ni-wFK"/>
                         <outlet property="dateLabel" destination="ILE-By-PpN" id="mxk-jX-wjC"/>
                         <outlet property="descriptionTextView" destination="boF-g0-DOB" id="i6w-GZ-bn0"/>
                         <outlet property="eventImageView" destination="JAC-Qa-x0P" id="sxs-fY-7MY"/>

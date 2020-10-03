@@ -4,4 +4,7 @@ public enum DetailViewState {
     case loading
     case requestFailed
     case requestSucceded
+    case checkinSucceded
+    case checkinFailed
+
 }

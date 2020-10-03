@@ -29,6 +29,7 @@
 		7F4CE9F825291A92001C4802 /* SBCardPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CE9F725291A92001C4802 /* SBCardPopup.swift */; };
 		7F4CE9FD25291AC1001C4802 /* CheckinPopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */; };
 		7F4CEA0225291AD6001C4802 /* CheckinPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */; };
+		7F4CEA1B25292870001C4802 /* CheckinPopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -100,6 +101,7 @@
 		7F4CE9F725291A92001C4802 /* SBCardPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBCardPopup.swift; sourceTree = "<group>"; };
 		7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckinPopupViewController.storyboard; sourceTree = "<group>"; };
 		7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinPopupViewController.swift; sourceTree = "<group>"; };
+		7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinPopupDelegate.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				7F4CE9FC25291AC1001C4802 /* CheckinPopupViewController.storyboard */,
 				7F4CEA0125291AD6001C4802 /* CheckinPopupViewController.swift */,
+				7F4CEA1A25292870001C4802 /* CheckinPopupDelegate.swift */,
 			);
 			path = "Checkin Popup";
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F43AAB82528CB5400376F67 /* EventTableViewCell.swift in Sources */,
+				7F4CEA1B25292870001C4802 /* CheckinPopupDelegate.swift in Sources */,
 				7F43AAA82528C15700376F67 /* GetCheckinResponse.swift in Sources */,
 				7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */,
 				7F28C5132528D40C00DD3DED /* GeoCoder.swift in Sources */,
