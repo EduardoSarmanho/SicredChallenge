@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5BE0B331BB1BFCD0C6C4B57B /* libPods-SicrediChallenge-SicrediChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA13B29BCE28E278626EE26 /* libPods-SicrediChallenge-SicrediChallengeUITests.a */; };
 		5C99D38324A915AB089DC1F8 /* libPods-SicrediChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357E8EBE94FC1BED100770A8 /* libPods-SicrediChallengeTests.a */; };
+		7F06B2E62528B268003613BD /* EventModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06B2E52528B268003613BD /* EventModuleTest.swift */; };
 		7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */; };
 		7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F26B25289FFA004A77CD /* HomeViewModel.swift */; };
 		7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2702528A006004A77CD /* HomeViewNavigation.swift */; };
@@ -16,6 +17,15 @@
 		7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F27A2528A041004A77CD /* AppCoordinator.swift */; };
 		7F59F2802528A0AB004A77CD /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F27F2528A0AB004A77CD /* EventsCoordinator.swift */; };
 		7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2912528A533004A77CD /* RestServiceFactory.swift */; };
+		7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F29A2528AA4B004A77CD /* EventsModule.swift */; };
+		7F59F2A32528AA52004A77CD /* EventsFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2A22528AA52004A77CD /* EventsFeatures.swift */; };
+		7F59F2AA2528AAC1004A77CD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2A92528AAC1004A77CD /* Event.swift */; };
+		7F59F2B52528AC6E004A77CD /* GetEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */; };
+		7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2B92528ACAD004A77CD /* ServiceError.swift */; };
+		7F59F2BF2528AE16004A77CD /* RestServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */; };
+		7F59F2C42528AE40004A77CD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2C32528AE40004A77CD /* StringExtension.swift */; };
+		7F59F2C92528AE6C004A77CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F59F2C82528AE6C004A77CD /* Localizable.strings */; };
+		7F59F2CE2528B198004A77CD /* DataInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59F2CD2528B198004A77CD /* DataInit.swift */; };
 		7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D325289AFC00E5E67A /* AppDelegate.swift */; };
 		7F6B66D625289AFC00E5E67A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D525289AFC00E5E67A /* SceneDelegate.swift */; };
 		7F6B66D825289AFC00E5E67A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66D725289AFC00E5E67A /* HomeViewController.swift */; };
@@ -51,6 +61,7 @@
 		357E8EBE94FC1BED100770A8 /* libPods-SicrediChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicrediChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB7CB00D918A4F482D5AAB9 /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		76E95C09C0F8EAF6F6EBE320 /* libPods-SicrediChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicrediChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F06B2E52528B268003613BD /* EventModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModuleTest.swift; sourceTree = "<group>"; };
 		7F59F26325289FEB004A77CD /* HomeViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeatures.swift; sourceTree = "<group>"; };
 		7F59F26B25289FFA004A77CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F59F2702528A006004A77CD /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
@@ -58,6 +69,15 @@
 		7F59F27A2528A041004A77CD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7F59F27F2528A0AB004A77CD /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
 		7F59F2912528A533004A77CD /* RestServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceFactory.swift; sourceTree = "<group>"; };
+		7F59F29A2528AA4B004A77CD /* EventsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModule.swift; sourceTree = "<group>"; };
+		7F59F2A22528AA52004A77CD /* EventsFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsFeatures.swift; sourceTree = "<group>"; };
+		7F59F2A92528AAC1004A77CD /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventsResponse.swift; sourceTree = "<group>"; };
+		7F59F2B92528ACAD004A77CD /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceExtension.swift; sourceTree = "<group>"; };
+		7F59F2C32528AE40004A77CD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7F59F2C82528AE6C004A77CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7F59F2CD2528B198004A77CD /* DataInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInit.swift; sourceTree = "<group>"; };
 		7F6B66D025289AFC00E5E67A /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6B66D325289AFC00E5E67A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F6B66D525289AFC00E5E67A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,10 +148,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7F06B2E42528B250003613BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F06B2E52528B268003613BD /* EventModuleTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		7F59F25025289D21004A77CD /* Businness Logic */ = {
 			isa = PBXGroup;
 			children = (
 				7F59F2902528A518004A77CD /* Models */,
+				7F59F2CD2528B198004A77CD /* DataInit.swift */,
 			);
 			path = "Businness Logic";
 			sourceTree = "<group>";
@@ -160,6 +189,7 @@
 		7F59F25325289D40004A77CD /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2C82528AE6C004A77CD /* Localizable.strings */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -168,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				7F59F25525289D8D004A77CD /* API */,
+				7F59F2A82528AA90004A77CD /* Models */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +206,7 @@
 		7F59F25525289D8D004A77CD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2992528A9BD004A77CD /* Events */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -215,6 +247,8 @@
 		7F59F25A25289DFA004A77CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7F59F2BE2528AE16004A77CD /* RestServiceExtension.swift */,
+				7F59F2C32528AE40004A77CD /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +270,33 @@
 			isa = PBXGroup;
 			children = (
 				7F59F2912528A533004A77CD /* RestServiceFactory.swift */,
+				7F59F2A92528AAC1004A77CD /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F59F2992528A9BD004A77CD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2A72528AA57004A77CD /* Models */,
+				7F59F29A2528AA4B004A77CD /* EventsModule.swift */,
+				7F59F2A22528AA52004A77CD /* EventsFeatures.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		7F59F2A72528AA57004A77CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2B42528AC6E004A77CD /* GetEventsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F59F2A82528AA90004A77CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F59F2B92528ACAD004A77CD /* ServiceError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,6 +339,7 @@
 		7F6B66E925289AFF00E5E67A /* SicrediChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F06B2E42528B250003613BD /* Service */,
 				7F6B66EA25289AFF00E5E67A /* SicrediChallengeTests.swift */,
 				7F6B66EC25289AFF00E5E67A /* Info.plist */,
 			);
@@ -400,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6B66E025289AFF00E5E67A /* LaunchScreen.storyboard in Resources */,
+				7F59F2C92528AE6C004A77CD /* Localizable.strings in Resources */,
 				7F6B66DD25289AFF00E5E67A /* Assets.xcassets in Resources */,
 				7F6B66DB25289AFC00E5E67A /* HomeViewController.storyboard in Resources */,
 			);
@@ -495,12 +558,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F59F2BA2528ACAD004A77CD /* ServiceError.swift in Sources */,
+				7F59F2BF2528AE16004A77CD /* RestServiceExtension.swift in Sources */,
+				7F59F2B52528AC6E004A77CD /* GetEventsResponse.swift in Sources */,
+				7F59F2AA2528AAC1004A77CD /* Event.swift in Sources */,
 				7F59F2712528A006004A77CD /* HomeViewNavigation.swift in Sources */,
 				7F59F26425289FEB004A77CD /* HomeViewFeatures.swift in Sources */,
 				7F6B66D825289AFC00E5E67A /* HomeViewController.swift in Sources */,
 				7F59F2762528A00C004A77CD /* HomeViewState.swift in Sources */,
+				7F59F2C42528AE40004A77CD /* StringExtension.swift in Sources */,
 				7F59F27B2528A041004A77CD /* AppCoordinator.swift in Sources */,
 				7F6B66D425289AFC00E5E67A /* AppDelegate.swift in Sources */,
+				7F59F29B2528AA4B004A77CD /* EventsModule.swift in Sources */,
+				7F59F2A32528AA52004A77CD /* EventsFeatures.swift in Sources */,
+				7F59F2CE2528B198004A77CD /* DataInit.swift in Sources */,
 				7F59F26C25289FFA004A77CD /* HomeViewModel.swift in Sources */,
 				7F59F2802528A0AB004A77CD /* EventsCoordinator.swift in Sources */,
 				7F59F2922528A533004A77CD /* RestServiceFactory.swift in Sources */,
@@ -512,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F06B2E62528B268003613BD /* EventModuleTest.swift in Sources */,
 				7F6B66EB25289AFF00E5E67A /* SicrediChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
