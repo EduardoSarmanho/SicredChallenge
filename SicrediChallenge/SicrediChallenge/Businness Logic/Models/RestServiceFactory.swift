@@ -11,7 +11,7 @@ struct RestServiceFactory {
             session = URLSession(configuration: .default, delegate: sessionDelegate, delegateQueue: nil)
         }
         
-        return RestService(session: session, scheme: .http, host: "5f5a8f24d44d640016169133.mockapi.io/api/")
+        return RestService(session: session, scheme: .http, host: "5f5a8f24d44d640016169133.mockapi.io")
     }
     
     func getDevRestService(sessionDelegate: URLSessionDelegate? = nil) -> RestService {
@@ -22,6 +22,6 @@ struct RestServiceFactory {
             session = URLSession(configuration: .default, delegate: sessionDelegate, delegateQueue: nil)
         }
         
-        return RestService(session: session, scheme: .http, host: "5f5a8f24d44d640016169133.mockapi.io/api/")
+        return RestService(session: session, scheme: .http, host: "5f5a8f24d44d640016169133.mockapi.io")
     }
 }

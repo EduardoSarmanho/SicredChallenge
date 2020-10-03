@@ -1,20 +1,44 @@
 PODS:
+  - Nimble (8.0.5)
+  - OHHTTPStubs/Core (9.0.0)
+  - OHHTTPStubs/Default (9.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.0.0)
+  - OHHTTPStubs/Swift (9.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.2.0)
   - RestService (1.0.1)
   - UIFlow (1.0.2)
 
 DEPENDENCIES:
+  - Nimble (= 8.0.5)
+  - OHHTTPStubs/Swift (= 9.0.0)
+  - Quick (= 2.2.0)
   - RestService (~> 1.0)
   - UIFlow (~> 1.0)
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - OHHTTPStubs
+    - Quick
     - RestService
     - UIFlow
 
 SPEC CHECKSUMS:
+  Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   RestService: 313a26e7bb24c9a5c134f08dace5bd73c9227f60
   UIFlow: da565d3b56aac0fa25dca119820e7b12a3c33dcb
 
-PODFILE CHECKSUM: c1fed8c39c3b89a886c51ca37856d0226895f96e
+PODFILE CHECKSUM: baec58d2151788014cc08585db9ddd92d803a522
 
 COCOAPODS: 1.9.3
