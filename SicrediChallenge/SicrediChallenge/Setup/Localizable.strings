@@ -2,3 +2,7 @@
 // Errors
 
 "error.unknown" = "Erro desconhecido. Por favor tente novamente.";
+"error.home.uialert.title" = "Atenção";
+"error.home.uialert.message" = "Algo deu errado, iremos tentar recarregar.";
+"error.detail.uialert.title" = "Atenção";
+"error.detail.uialert.message" = "Algo deu errado, iremos voltar para a página inicial.";

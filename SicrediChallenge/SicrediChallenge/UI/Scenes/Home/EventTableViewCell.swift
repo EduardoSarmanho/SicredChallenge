@@ -16,7 +16,7 @@ class EventTableViewCell: UITableViewCell {
     func setupEventCell(event: Event) {
         loadImage(stringUrl: event.image ?? "")
         titleLabel.text = event.title
-        priceLabel.text = "R$ \(event.price ?? 0)"
+        priceLabel.text = "R$ \(event.price ?? 0)".replacingOccurrences(of: ".", with: ",")
         setCity(latitude: event.latitude ?? 0, longitude: event.longitude ?? 0)
         dateLabel.text = event.date?.milisecondToDateString
         descriptionLabel.text = event.description
