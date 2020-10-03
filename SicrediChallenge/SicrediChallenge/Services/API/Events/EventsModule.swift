@@ -23,10 +23,12 @@ extension EventsModule {
                 callback(.failure(self.service.getUnknownError(), response.data))
                 return
             }
+            
             guard let dictResponse = arrayResponse as? [[String: Any]] else {
                 callback(.failure(self.service.getUnknownError(), response.data))
                 return
             }
+            
             let events = dictResponse.map({ Event(data: $0)})
             
             callback(.success(events, response.data))

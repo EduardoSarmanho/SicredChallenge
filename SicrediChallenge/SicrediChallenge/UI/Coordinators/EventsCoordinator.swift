@@ -3,8 +3,13 @@ import RestService
 
 class EventsCoordinator: Coordinator {
     
+    // MARK: - Properties
+    let restService: RestService!
+    
     // MARK: - Initializer
-    override init(navigation: UINavigationController) {
+    init(navigation: UINavigationController, restService: RestService) {
+       
+        self.restService = restService
         super.init(navigation: navigation)
     }
     
@@ -19,7 +24,8 @@ extension EventsCoordinator: HomeViewNavigation {
     func navigateToHome(animated: Bool) {
         guard let scene = HomeViewController.instantiate() else { return }
         scene.coordinator = self
-        scene.viewModel = HomeViewModel()
+        let eventModule = EventsModule(service: restService)
+        scene.viewModel = HomeViewModel(eventModule: eventModule)
         
         navigation.pushViewController(scene, animated: animated)
     }
