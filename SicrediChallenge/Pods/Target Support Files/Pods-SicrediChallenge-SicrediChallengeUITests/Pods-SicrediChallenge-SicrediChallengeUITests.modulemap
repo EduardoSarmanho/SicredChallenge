@@ -1,0 +1,6 @@
+module Pods_SicrediChallenge_SicrediChallengeUITests {
+  umbrella header "Pods-SicrediChallenge-SicrediChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

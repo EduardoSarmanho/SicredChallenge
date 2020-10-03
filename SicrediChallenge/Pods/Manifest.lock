@@ -1,0 +1,20 @@
+PODS:
+  - RestService (1.0.1)
+  - UIFlow (1.0.2)
+
+DEPENDENCIES:
+  - RestService (~> 1.0)
+  - UIFlow (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - RestService
+    - UIFlow
+
+SPEC CHECKSUMS:
+  RestService: 313a26e7bb24c9a5c134f08dace5bd73c9227f60
+  UIFlow: da565d3b56aac0fa25dca119820e7b12a3c33dcb
+
+PODFILE CHECKSUM: c1fed8c39c3b89a886c51ca37856d0226895f96e
+
+COCOAPODS: 1.9.3

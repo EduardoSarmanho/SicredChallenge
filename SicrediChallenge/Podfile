@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SicrediChallenge' do
+  
+  pod 'UIFlow', '~> 1.0'
+  pod 'RestService', '~> 1.0'
+
+  target 'SicrediChallengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SicrediChallengeUITests' do
+    # Pods for testing
+  end
+
+end
