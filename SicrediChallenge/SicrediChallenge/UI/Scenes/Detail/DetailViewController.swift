@@ -12,7 +12,7 @@ class DetailViewController: UIFlowViewController<DetailViewFeatures, DetailViewN
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var organizatorsView: UIView!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionTextView: UILabel!
     @IBOutlet weak var personCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -119,9 +119,6 @@ extension DetailViewController {
 
 // MARK: - IBActions
 extension DetailViewController {
-    @IBAction func backPressed(_ sender: UIButton) {
-        coordinator?.backToHome(animated: true)
-    }
     @IBAction func checkinPressed(_ sender: UIButton) {
         openCheckinPopUp()
     }

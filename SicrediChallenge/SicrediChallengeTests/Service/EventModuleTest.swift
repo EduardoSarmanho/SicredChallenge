@@ -1,7 +1,7 @@
-import Quick
 import Nimble
 import OHHTTPStubs
 import RestService
+import Quick
 @testable import SicrediChallenge
 
 class EventModuleTest: QuickSpec {

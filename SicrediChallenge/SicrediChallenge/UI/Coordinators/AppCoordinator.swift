@@ -22,8 +22,4 @@ class AppCoordinator: Coordinator {
             navigation.setViewControllers([currentViewController], animated: false)
         }
     }
-    
-    func goBack(animated: Bool = true) {
-        back(animated: true, toRoot: false)
-    }
 }
